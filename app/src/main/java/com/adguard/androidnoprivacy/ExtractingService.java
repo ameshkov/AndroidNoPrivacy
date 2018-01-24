@@ -20,7 +20,7 @@ import java.util.List;
 /**
  * The service that extracts all the dangerous private information
  */
-public final class ExtractingService {
+final class ExtractingService {
 
     private static final String CANNOT_EXTRACT = "Cannot extract";
 
@@ -91,7 +91,7 @@ public final class ExtractingService {
         }
     }
 
-    public static String[] getSms(Context context) {
+    static String[] getSms(Context context) {
         Cursor cursor = context.getContentResolver().query(Telephony.Sms.CONTENT_URI, null, null, null, Telephony.Sms.DEFAULT_SORT_ORDER);
         if (cursor == null) {
             return new String[]{};
