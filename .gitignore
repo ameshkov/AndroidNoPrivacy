@@ -1,4 +1,6 @@
 .DS_Store
+app/release
+keystore
 
 # Built application files
 *.apk
